@@ -8,12 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/welcomeTextView"
+        android:layout_width="133dp"
+        android:layout_height="59dp"
+        android:fontFamily="cursive"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="134dp"
+        android:layout_height="74dp"
+        android:text="START"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="515dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
