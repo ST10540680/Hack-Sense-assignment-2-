@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Start button to switch to another class
-        val StartButton = findViewById<Button>(R.id.StartButtonID)
+        val startButton = findViewById<Button>(R.id.StartButtonID)
 
         // val intent to Switch from one class to another
-        StartButton.setOnClickListener {
+        startButton.setOnClickListener {
             val intent = Intent (this, QuizActivity::class.java)
 
             //Start the activity
