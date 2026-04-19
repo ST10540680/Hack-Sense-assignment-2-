@@ -15,7 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         //Start button to switch to another class
         val StartButton = findViewById<Button>(R.id.StartButtonID)
-        
+
+        StartButton.setOnClickListener {
+            
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
