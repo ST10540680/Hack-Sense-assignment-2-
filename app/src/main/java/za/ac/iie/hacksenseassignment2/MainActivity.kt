@@ -1,5 +1,6 @@
 package za.ac.iie.hacksenseassignment2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val StartButton = findViewById<Button>(R.id.StartButtonID)
 
         StartButton.setOnClickListener {
-            
+            val Intent = Intent (this, QuizActivity::class.java)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
