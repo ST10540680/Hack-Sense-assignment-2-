@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        //Start button to switch to another class
+        // start button to switch to another class
         val startButton = findViewById<Button>(R.id.StartButtonID)
 
         // val intent to Switch from one class to another
         startButton.setOnClickListener {
             val intent = Intent (this, QuizActivity::class.java)
 
-            //Start the activity
+            // start the activity
             startActivity(intent)
         }
 
