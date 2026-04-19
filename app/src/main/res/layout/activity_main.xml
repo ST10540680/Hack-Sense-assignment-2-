@@ -5,16 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainactivity_walpaper"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/welcomeTextView"
-        android:layout_width="133dp"
-        android:layout_height="59dp"
+        android:layout_width="228dp"
+        android:layout_height="81dp"
         android:fontFamily="cursive"
         android:text="Welcome!"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textAllCaps="false"
+        android:textColor="#F8F4F4"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,11 +25,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/StartButton"
-        android:layout_width="134dp"
-        android:layout_height="74dp"
+        android:id="@+id/StartButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E03A3A"
         android:text="START"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="515dp" />
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="511dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
