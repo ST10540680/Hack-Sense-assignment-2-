@@ -17,8 +17,9 @@ class MainActivity : AppCompatActivity() {
         //Start button to switch to another class
         val StartButton = findViewById<Button>(R.id.StartButtonID)
 
+        // val intent to Switch from one class to another
         StartButton.setOnClickListener {
-            val Intent = Intent (this, QuizActivity::class.java)
+            val intent = Intent (this, QuizActivity::class.java)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
