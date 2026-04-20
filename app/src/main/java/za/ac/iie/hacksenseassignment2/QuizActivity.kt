@@ -1,4 +1,6 @@
 package za.ac.iie.hacksenseassignment2
 
-class QuizActivity: {
+import androidx.appcompat.app.AppCompatActivity
+
+class QuizActivity: AppCompatActivity() {
 }
