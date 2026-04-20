@@ -1,4 +1,4 @@
 package za.ac.iie.hacksenseassignment2
 
-class QuizActivity {
+class QuizActivity: {
 }
