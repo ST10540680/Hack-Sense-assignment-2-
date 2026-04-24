@@ -91,6 +91,10 @@ class QuizActivity: AppCompatActivity() {
         val question = questions [currentIndex]
 
         // compare user answer with correct answer
-        if (userAnswer == question.isTrue)
+        if (userAnswer == question.isTrue) {
+
+            // If correct "increase score"
+            score++
+        }
     }
 }
