@@ -97,7 +97,7 @@ class QuizActivity: AppCompatActivity() {
             score++
 
             // Show positive feedback + explanation
-            
+            feedbackTextView.text = "Correct! ${question.explanation}"
         }
     }
 }
