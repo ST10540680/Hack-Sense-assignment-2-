@@ -13,7 +13,7 @@ class QuizActivity: AppCompatActivity() {
 
     // variables to track quiz progress
     var currentIndex = 0  //keeps track of which question we are on
-    var score = 0
+    var score = 0         //stores number of correct answers
 
     //get list of question from repository (data layer)
 
