@@ -52,7 +52,9 @@ class QuizActivity: AppCompatActivity() {
             currentIndex++
 
             // Check if there are more questions
-            
+            if (currentIndex < question.size >) {
+                
+            }
         }
     }
 
