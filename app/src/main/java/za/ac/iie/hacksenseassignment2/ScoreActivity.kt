@@ -1,4 +1,14 @@
 package za.ac.iie.hacksenseassignment2
 
-class ScoreActivity {
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+
+class ScoreActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_score)
+
+        
 }
