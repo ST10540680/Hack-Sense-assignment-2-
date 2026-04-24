@@ -71,6 +71,8 @@ class QuizActivity: AppCompatActivity() {
 
                 startActivity(intent)
 
+                // Close this activity so user can't go back
+                finish()
             }
         }
     }
