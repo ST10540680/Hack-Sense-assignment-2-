@@ -22,5 +22,6 @@ class ScoreActivity : AppCompatActivity() {
         //Display the score on screen
         scoreText.text = "Score: $score / $total"
 
+        // Show feedback message based on performance
         
 }
