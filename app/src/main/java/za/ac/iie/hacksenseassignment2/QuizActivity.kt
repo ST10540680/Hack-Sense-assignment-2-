@@ -58,6 +58,8 @@ class QuizActivity: AppCompatActivity() {
                 showQuestion()
 
                 // clear previous feedback
+                feedbackTextView.text = ""
+            } else {
                 
             }
         }
