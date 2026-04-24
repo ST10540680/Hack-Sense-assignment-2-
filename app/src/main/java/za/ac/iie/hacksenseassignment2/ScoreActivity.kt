@@ -15,6 +15,7 @@ class ScoreActivity : AppCompatActivity() {
         val feedbackText = findViewById<TextView>(R.id.finalFeedback)
         val reviewText = findViewById<TextView>(R.id.reviewText)
 
+        //get data passed from QuizActivity using intent
         val score = intent.getIntExtra("SCORE", 0)
         val total = intent.getIntExtra("TOTAL", 0)
 }
