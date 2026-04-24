@@ -25,8 +25,12 @@ class ScoreActivity : AppCompatActivity() {
         // Show feedback message based on performance
         feedbackText.text = if (score >= total / 5) {
 
-            //show if user passes
+            //shown if user passes
             "Great job!"
+        } else {
+
+            //shown if user fails
+            "keeping practising"
         }
     }
 }
