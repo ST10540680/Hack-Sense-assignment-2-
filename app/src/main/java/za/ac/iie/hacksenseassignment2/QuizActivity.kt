@@ -15,6 +15,7 @@ class QuizActivity: AppCompatActivity() {
     var currentIndex = 0
     var score = 0
 
+    //get list of question from repository (data layer)
     
 
 
