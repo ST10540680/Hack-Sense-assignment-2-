@@ -95,6 +95,9 @@ class QuizActivity: AppCompatActivity() {
 
             // If correct "increase score"
             score++
+
+            // Show positive feedback + explanation
+            
         }
     }
 }
