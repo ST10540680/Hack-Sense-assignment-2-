@@ -49,6 +49,9 @@ class QuizActivity: AppCompatActivity() {
         nextButton.setOnClickListener {
 
             // Move to next question (this part of the loop)
+            currentIndex++
+
+            
         }
     }
 
