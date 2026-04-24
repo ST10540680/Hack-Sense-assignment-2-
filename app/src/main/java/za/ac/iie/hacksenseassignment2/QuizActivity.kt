@@ -51,6 +51,7 @@ class QuizActivity: AppCompatActivity() {
             // Move to next question (this part of the loop)
             currentIndex++
 
+            // Check if there are more questions
             
         }
     }
