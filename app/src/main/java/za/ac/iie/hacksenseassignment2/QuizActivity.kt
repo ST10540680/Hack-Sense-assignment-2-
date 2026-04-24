@@ -10,6 +10,6 @@ class QuizActivity: AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_quiz)
 
-        //
+        // 
     }
 }
