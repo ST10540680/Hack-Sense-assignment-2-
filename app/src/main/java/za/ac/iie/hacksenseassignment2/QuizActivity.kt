@@ -40,10 +40,12 @@ class QuizActivity: AppCompatActivity() {
             checkAnswer(true)
         }
 
-        // when user click "false"
+        // when user clicks "false"
         falseButton.setOnClickListener {
-            checkAnswer(false) 
+            checkAnswer(false)
         }
+
+        // when user clicks "next"
     }
 
     fun checkAnswer() {
