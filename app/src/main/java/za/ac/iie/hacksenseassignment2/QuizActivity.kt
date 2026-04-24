@@ -88,6 +88,7 @@ class QuizActivity: AppCompatActivity() {
 
     // function to display current question
     fun showQuestion() {
-
+        val question = questions [currentIndex]
+        
     }
 }
