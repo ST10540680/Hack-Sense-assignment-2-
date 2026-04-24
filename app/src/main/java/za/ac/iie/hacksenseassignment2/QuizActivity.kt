@@ -82,12 +82,7 @@ class QuizActivity: AppCompatActivity() {
         TODO("Not yet implemented")
     }
 
-    fun checkAnswer() {
-
-    }
-
-    // function to display current question
-    fun showQuestion() {
+    fun checkAnswer(userAnswer: Boolean) {
         val question = questions [currentIndex]
 
         // compare user answer with correct answer
@@ -103,5 +98,13 @@ class QuizActivity: AppCompatActivity() {
             // if wrong " show correct explanation
             feedbackTextView.text = "wrong! ${question.explanation}"
         }
+
+    }
+
+    // function to display current question
+    fun showQuestion() {
+        val question = questions [currentIndex]
+
+
     }
 }
