@@ -23,5 +23,10 @@ class ScoreActivity : AppCompatActivity() {
         scoreText.text = "Score: $score / $total"
 
         // Show feedback message based on performance
-        
+        feedbackText.text = if (score >= total / 5) {
+
+            //show if user passes
+            "Great job!"
+        }
+    }
 }
