@@ -89,6 +89,8 @@ class QuizActivity: AppCompatActivity() {
     // function to display current question
     fun showQuestion() {
         val question = questions [currentIndex]
+
+        // compare user answer with correct answer
         
     }
 }
