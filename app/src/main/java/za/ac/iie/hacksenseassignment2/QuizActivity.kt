@@ -98,6 +98,10 @@ class QuizActivity: AppCompatActivity() {
 
             // Show positive feedback + explanation
             feedbackTextView.text = "Correct! ${question.explanation}"
+        } else {
+
+            // if wrong " show correct explanation
+            feedbackTextView.text = "wrong! ${question.explanation}"
         }
     }
 }
