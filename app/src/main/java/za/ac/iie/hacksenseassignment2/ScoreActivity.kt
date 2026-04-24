@@ -18,4 +18,9 @@ class ScoreActivity : AppCompatActivity() {
         //get data passed from QuizActivity using intent
         val score = intent.getIntExtra("SCORE", 0)
         val total = intent.getIntExtra("TOTAL", 0)
+
+        //Display the score on screen
+        scoreText.text = "Score: $score / $total"
+
+        
 }
