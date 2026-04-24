@@ -36,7 +36,15 @@ class QuizActivity: AppCompatActivity() {
         showQuestion()
 
         // when user clicks "true"
-        
+        trueButton.setOnClickListener {
+            checkAnswer(true)
+        }
+
+        //
+    }
+
+    fun checkAnswer() {
+
     }
 
     fun showQuestion() {
