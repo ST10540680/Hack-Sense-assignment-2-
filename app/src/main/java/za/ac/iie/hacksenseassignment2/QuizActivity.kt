@@ -1,5 +1,6 @@
 package za.ac.iie.hacksenseassignment2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -62,7 +63,7 @@ class QuizActivity: AppCompatActivity() {
             } else {
 
                 // No more questions = go to score screen
-                
+                val intent = Intent(this, scoreActivity::class.java)
 
             }
         }
