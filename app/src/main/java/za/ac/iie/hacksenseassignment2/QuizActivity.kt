@@ -7,11 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class QuizActivity: AppCompatActivity() {
 
-    // Components of the User Interface
+    // Components of the User Interface(TextViews)
     var questionTextView = TextView
     var feedbackTextView = TextView
 
-    
+    //
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
