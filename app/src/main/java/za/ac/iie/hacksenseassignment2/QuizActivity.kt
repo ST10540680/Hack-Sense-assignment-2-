@@ -65,6 +65,8 @@ class QuizActivity: AppCompatActivity() {
                 // No more questions = go to score screen
                 val intent = Intent(this, scoreActivity::class.java)
 
+                //send Score data to next activity
+
             }
         }
     }
