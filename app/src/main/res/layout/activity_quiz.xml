@@ -28,4 +28,13 @@
         android:text="Next"
         tools:layout_editor_absoluteX="271dp"
         tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F8F6F6"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="268dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
