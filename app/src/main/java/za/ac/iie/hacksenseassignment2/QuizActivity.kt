@@ -33,6 +33,10 @@ class QuizActivity: AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.nextButtonID)
 
         // Display the first question
-        
+        showQuestion()
+    }
+
+    fun showQuestion() {
+
     }
 }
