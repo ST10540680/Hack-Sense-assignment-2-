@@ -77,6 +77,7 @@ class QuizActivity: AppCompatActivity() {
         }
     }
 
+
     fun putExtra() {
         TODO("Not yet implemented")
     }
@@ -85,6 +86,7 @@ class QuizActivity: AppCompatActivity() {
 
     }
 
+    // function to display current question
     fun showQuestion() {
 
     }
