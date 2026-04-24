@@ -105,6 +105,9 @@ class QuizActivity: AppCompatActivity() {
     fun showQuestion() {
         val question = questions [currentIndex]
 
+        // Set question text on screen
+        questionTextView.text = questions.text
+
 
     }
 }
