@@ -16,6 +16,7 @@ class QuizActivity: AppCompatActivity() {
     var score = 0         //stores number of correct answers
 
     //get list of question from repository (data layer)
+    val questions = QuestionRepository.getQuestion()
 
 
 
