@@ -34,6 +34,9 @@ class QuizActivity: AppCompatActivity() {
 
         // Display the first question
         showQuestion()
+
+        // when user clicks "true"
+        
     }
 
     fun showQuestion() {
