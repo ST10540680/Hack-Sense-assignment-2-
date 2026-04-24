@@ -32,5 +32,14 @@ class ScoreActivity : AppCompatActivity() {
             //shown if user fails
             "keeping practising"
         }
+
+        // Display a simple review of correct answers
+        reviewText.text = """
+            Review:
+            1. Rice == false
+            2. Shortcuts == true
+            3. overnight charging = false
+            4. Notifications Off == true
+             """.trimIndent()
     }
 }
