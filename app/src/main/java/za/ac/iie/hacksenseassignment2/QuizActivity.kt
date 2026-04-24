@@ -53,7 +53,7 @@ class QuizActivity: AppCompatActivity() {
             currentIndex++
 
             // Check if there are more questions
-            if (currentIndex < question.size >) {
+            if (currentIndex < questionds.size >) {
 
                 // Show next question
                 showQuestion()
@@ -66,9 +66,15 @@ class QuizActivity: AppCompatActivity() {
                 val intent = Intent(this, scoreActivity::class.java)
 
                 //send Score data to next activity
+                intent.putExtra("SCORE", score)
+                intent.putExtra("TOTAL", questions.size)
 
             }
         }
+    }
+
+    fun putExtra() {
+        TODO("Not yet implemented")
     }
 
     fun checkAnswer() {
