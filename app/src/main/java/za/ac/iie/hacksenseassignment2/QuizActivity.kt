@@ -41,7 +41,9 @@ class QuizActivity: AppCompatActivity() {
         }
 
         // when user click "false"
-        
+        falseButton.setOnClickListener {
+            checkAnswer(false) 
+        }
     }
 
     fun checkAnswer() {
