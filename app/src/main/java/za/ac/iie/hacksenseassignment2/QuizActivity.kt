@@ -60,7 +60,10 @@ class QuizActivity: AppCompatActivity() {
                 // clear previous feedback
                 feedbackTextView.text = ""
             } else {
+
+                // No more questions = go to score screen
                 
+
             }
         }
     }
