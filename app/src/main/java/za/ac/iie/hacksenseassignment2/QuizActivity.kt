@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 class QuizActivity: AppCompatActivity() {
 
     // Components of the User Interface(TextViews)
-    var questionTextView = TextView
-    var feedbackTextView = TextView
+    var questionTextView: TextView? = TextView
+    var feedbackTextView: TextView? = TextView
 
     // variables to track quiz progress
     var currentIndex = 0  //keeps track of which question we are on
@@ -23,6 +23,8 @@ class QuizActivity: AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_quiz)
 
-        // variables
+        // connecting variables to UI elements in XML
+        questionTextView = findViewById<TextView>(R.id.questionTextView)
+        feedbackTextView = findViewById<TextView>(R.id.feedbackTextView)
     }
 }
