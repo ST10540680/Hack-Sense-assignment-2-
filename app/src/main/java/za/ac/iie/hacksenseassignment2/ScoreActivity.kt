@@ -14,4 +14,7 @@ class ScoreActivity : AppCompatActivity() {
         val scoreText = findViewById<TextView>(R.id.scoreText)
         val feedbackText = findViewById<TextView>(R.id.finalFeedback)
         val reviewText = findViewById<TextView>(R.id.reviewText)
+
+        val score = intent.getIntExtra("SCORE", 0)
+        val total = intent.getIntExtra("TOTAL", 0)
 }
