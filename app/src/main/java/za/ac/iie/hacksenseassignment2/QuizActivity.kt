@@ -12,11 +12,11 @@ class QuizActivity: AppCompatActivity() {
     var feedbackTextView = TextView
 
     // variables to track quiz progress
-    var currentIndex = 0
+    var currentIndex = 0  //keeps track of which question we are on
     var score = 0
 
     //get list of question from repository (data layer)
-    
+
 
 
     override fun onCreate(savedInstanceState: Bundle?){
