@@ -1,6 +1,7 @@
 package za.ac.iie.hacksenseassignment2
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,5 +27,7 @@ class QuizActivity: AppCompatActivity() {
         // connecting variables to UI elements in XML
         questionTextView = findViewById<TextView>(R.id.questionTextView)
         feedbackTextView = findViewById<TextView>(R.id.feedbackTextView)
+
+        val trueButton = findViewById<Button>(R.id.trueButtonID)
     }
 }
