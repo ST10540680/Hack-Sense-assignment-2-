@@ -17,7 +17,7 @@ class QuizActivity: AppCompatActivity() {
 
     //get list of question from repository (data layer)
     val questions = QuestionRepository.getQuestion()
-    
+
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
