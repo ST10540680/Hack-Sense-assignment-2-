@@ -11,7 +11,8 @@ class QuizActivity: AppCompatActivity() {
     var questionTextView = TextView
     var feedbackTextView = TextView
 
-    //
+    // variables to track quiz progress
+    
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
