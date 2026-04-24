@@ -40,7 +40,8 @@ class QuizActivity: AppCompatActivity() {
             checkAnswer(true)
         }
 
-        //
+        // when user click "false"
+        
     }
 
     fun checkAnswer() {
