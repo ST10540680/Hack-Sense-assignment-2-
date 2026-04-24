@@ -7,27 +7,27 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class QuizActivity: AppCompatActivity() {
+class QuizActivity : AppCompatActivity() {
 
     // Components of the User Interface(TextViews)
-    var questionTextView: TextView? = TextView
-    var feedbackTextView: TextView? = TextView
+    private var questionTextView: TextView? = null
+    private var feedbackTextView: TextView? = null
 
     // variables to track quiz progress
-    var currentIndex = 0  //keeps track of which question we are on
-    var score = 0         //stores number of correct answers
+    private var currentIndex = 0  // keeps track of which question we are on
+    private var score = 0         // stores number of correct answers
 
-    //get list of question from repository (data layer)
-    val questions = QuestionRepository.getQuestion()
+    // get list of question from repository (data layer)
+    private val questions = QuestionRepository.getQuestion()
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_quiz)
 
         // connecting variables to UI elements in XML
-        questionTextView = findViewById<TextView>(R.id.questionTextView)
-        feedbackTextView = findViewById<TextView>(R.id.feedbackTextView)
+        questionTextView = findViewById(R.id.questionTextView)
+        feedbackTextView = findViewById(R.id.feedbackTextView)
 
         val trueButton = findViewById<Button>(R.id.trueButtonID)
         val falseButton = findViewById<Button>(R.id.falseButtonID)
@@ -38,34 +38,30 @@ class QuizActivity: AppCompatActivity() {
 
         // when user clicks "true"
         trueButton.setOnClickListener {
-            checkAnswer(true)
+            checkAnswer(userAnswer = true)
         }
 
         // when user clicks "false"
         falseButton.setOnClickListener {
-            checkAnswer(false)
+            checkAnswer(userAnswer = false)
         }
 
         // when user clicks "next"
         nextButton.setOnClickListener {
-
-            // Move to next question (this part of the loop)
+            // Move to next question
             currentIndex++
 
             // Check if there are more questions
-            if (currentIndex < questionds.size >) {
-
+            if (currentIndex < questions.size) {
                 // Show next question
                 showQuestion()
-
                 // clear previous feedback
-                feedbackTextView.text = ""
+                feedbackTextView?.text = ""
             } else {
-
                 // No more questions = go to score screen
-                val intent = Intent(this, scoreActivity::class.java)
+                val intent = Intent(this, ScoreActivity::class.java)
 
-                //send Score data to next activity
+                // send Score data to next activity
                 intent.putExtra("SCORE", score)
                 intent.putExtra("TOTAL", questions.size)
 
@@ -77,37 +73,25 @@ class QuizActivity: AppCompatActivity() {
         }
     }
 
-
-    fun putExtra() {
-        TODO("Not yet implemented")
-    }
-
-    fun checkAnswer(userAnswer: Boolean) {
-        val question = questions [currentIndex]
+    private fun checkAnswer(userAnswer: Boolean) {
+        val question = questions[currentIndex]
 
         // compare user answer with correct answer
-        if (userAnswer == question.isTrue) {
-
+        if (userAnswer == question.answer) {
             // If correct "increase score"
             score++
-
-            // Show positive feedback + explanation
-            feedbackTextView.text = "Correct! ${question.explanation}"
+            // Show positive feedback + explanation using string resource
+            feedbackTextView?.text = getString(R.string.correct_feedback, question.explanation)
         } else {
-
-            // if wrong " show correct explanation
-            feedbackTextView.text = "wrong! ${question.explanation}"
+            // if wrong " show correct explanation using string resource
+            feedbackTextView?.text = getString(R.string.wrong_feedback, question.explanation)
         }
-
     }
 
     // function to display current question
-    fun showQuestion() {
-        val question = questions [currentIndex]
-
+    private fun showQuestion() {
+        val question = questions[currentIndex]
         // Set question text on screen
-        questionTextView.text = questions.text
-
-
+        questionTextView?.text = question.questionText
     }
 }

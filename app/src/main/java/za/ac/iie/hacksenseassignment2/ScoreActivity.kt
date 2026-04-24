@@ -15,31 +15,21 @@ class ScoreActivity : AppCompatActivity() {
         val feedbackText = findViewById<TextView>(R.id.finalFeedback)
         val reviewText = findViewById<TextView>(R.id.reviewText)
 
-        //get data passed from QuizActivity using intent
+        // get data passed from QuizActivity using intent
         val score = intent.getIntExtra("SCORE", 0)
         val total = intent.getIntExtra("TOTAL", 0)
 
-        //Display the score on screen
-        scoreText.text = "Score: $score / $total"
+        // Display the score on screen using string resource with placeholders
+        scoreText.text = getString(R.string.score_format, score, total)
 
-        // Show feedback message based on performance
-        feedbackText.text = if (score >= total / 5) {
-
-            //shown if user passes
-            "Great job!"
+        // Show feedback message based on performance using string resources
+        feedbackText.text = if (score >= total / 2) {
+            getString(R.string.great_job)
         } else {
-
-            //shown if user fails
-            "keeping practising"
+            getString(R.string.keep_practicing)
         }
 
-        // Display a simple review of correct answers
-        reviewText.text = """
-            Review:
-            1. Rice == false
-            2. Shortcuts == true
-            3. overnight charging = false
-            4. Notifications Off == true
-             """.trimIndent()
+        // Display review from string resource
+        reviewText.text = getString(R.string.review_content)
     }
 }
