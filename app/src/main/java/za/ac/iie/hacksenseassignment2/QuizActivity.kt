@@ -69,6 +69,8 @@ class QuizActivity: AppCompatActivity() {
                 intent.putExtra("SCORE", score)
                 intent.putExtra("TOTAL", questions.size)
 
+                startActivity(intent)
+
             }
         }
     }
