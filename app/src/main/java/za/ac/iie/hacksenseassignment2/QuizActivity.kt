@@ -46,6 +46,10 @@ class QuizActivity: AppCompatActivity() {
         }
 
         // when user clicks "next"
+        nextButton.setOnClickListener {
+
+            // Move to next question (this part of the loop)
+        }
     }
 
     fun checkAnswer() {
