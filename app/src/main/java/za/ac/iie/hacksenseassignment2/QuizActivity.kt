@@ -54,8 +54,11 @@ class QuizActivity: AppCompatActivity() {
             // Check if there are more questions
             if (currentIndex < question.size >) {
 
-                //Show next question
+                // Show next question
                 showQuestion()
+
+                // clear previous feedback
+                
             }
         }
     }
