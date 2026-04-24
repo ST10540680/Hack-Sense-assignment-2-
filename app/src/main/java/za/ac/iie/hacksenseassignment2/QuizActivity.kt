@@ -29,5 +29,9 @@ class QuizActivity: AppCompatActivity() {
         feedbackTextView = findViewById<TextView>(R.id.feedbackTextView)
 
         val trueButton = findViewById<Button>(R.id.trueButtonID)
+        val falseButton = findViewById<Button>(R.id.falseButtonID)
+        val nextButton = findViewById<Button>(R.id.nextButtonID)
+
+        
     }
 }
