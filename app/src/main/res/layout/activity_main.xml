@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainactivity_walpaper"
+    android:background="@drawable/activity_main"
     tools:context=".MainActivity">
 
     <TextView
@@ -31,8 +31,8 @@
         android:layout_marginTop="32dp"
         android:background="@color/start_button_red"
         android:text="@string/start"
-        app:layout_constraintTop_toBottomOf="@id/welcomeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/welcomeTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

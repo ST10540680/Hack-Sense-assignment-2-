@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/quizactivity_walpaper">
+    android:background="@drawable/activity_quiz">
 
     <TextView
         android:id="@+id/questionTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:gravity="center"
         android:text="@string/question_placeholder"
         android:textColor="@color/quiz_text_color"
         android:textSize="20sp"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/feedbackTextView"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
@@ -29,10 +29,10 @@
         android:text="@string/feedback_placeholder"
         android:textColor="@color/quiz_text_color"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/questionTextView"
         app:layout_constraintBottom_toTopOf="@+id/trueButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/questionTextView" />
 
     <Button
         android:id="@+id/trueButtonID"
@@ -40,28 +40,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/true_text"
-        app:layout_constraintTop_toBottomOf="@id/feedbackTextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/falseButtonID"
-        app:layout_constraintHorizontal_chainStyle="spread" />
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedbackTextView" />
 
     <Button
         android:id="@+id/falseButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/false_text"
-        app:layout_constraintTop_toTopOf="@id/trueButtonID"
+        app:layout_constraintEnd_toStartOf="@+id/nextButtonID"
         app:layout_constraintStart_toEndOf="@id/trueButtonID"
-        app:layout_constraintEnd_toStartOf="@+id/nextButtonID" />
+        app:layout_constraintTop_toTopOf="@id/trueButtonID" />
 
     <Button
         android:id="@+id/nextButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next_text"
-        app:layout_constraintTop_toTopOf="@id/trueButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/falseButtonID"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/trueButtonID" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

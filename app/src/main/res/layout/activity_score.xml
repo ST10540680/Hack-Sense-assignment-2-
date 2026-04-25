@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/scoreactivity_xml"
     tools:context=".ScoreActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="@string/score_format"
+        android:textColor="#FAF2F2"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/feedback_placeholder"
+        android:textColor="#FDFBFB"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:text="@string/review_title"
+        android:textColor="@color/quiz_text_color"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
