@@ -70,9 +70,9 @@ All generated content was carefully reviewed, tested, and modified by the author
 
 ## References
 
-Google. 2026. Gemini. [Generative artificial intelligence tool]. Available at: https://gemini.google.com/ [Accessed: 25 April 2026].
+Google. 2026. Gemini. [Generative artificial intelligence tool]. Available at: https://gemini.google.com/ [Accessed: 24 April 2026].
 
-OpenAI. 2026. ChatGPT (GPT-5.3). [Large language model]. Available at: https://chat.openai.com/ [Accessed: 25 April 2026].
+OpenAI. 2026. ChatGPT (GPT-5.3). [Large language model]. Available at: https://chat.openai.com/ [Accessed: 22 April 2026].
 
 The Independent Institute of Education (IIE). 2026. Introduction to Mobile Application Development (IMAD). [Module guide]. Emeris. Available via: IIE student portal (Learn)https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BCA5A47EE-F107-44AD-AB60-6E296E0B3EAE%7D&file=IMAD5112MM.docx&action=default&mobileredirect=true [Accessed: 23 April 2026].
 
